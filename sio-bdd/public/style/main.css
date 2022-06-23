@@ -1,0 +1,37 @@
+:root {
+    --body-background: #fafafa;
+    --background: rgb(0, 0, 0);
+    --background-soft: rgb(61, 61, 61);
+    --header-height: 70px;
+}
+
+body{
+    background: var(--body-background);
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: #0069ff;
+    background-image: url(/public/images/hero.svg);
+
+    padding: 80px 1.5rem 3rem;
+
+    min-height: calc(100vh - 56px);
+}
+
+.hero > p {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 60px;
+}
+
+.logo {
+    height: 40px;
+}

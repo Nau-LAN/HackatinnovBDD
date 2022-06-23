@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: sio-db
+    environment:
+      - MVC_SERVER=192.168.139.1
+      - MVC_DB=mysql
+      - MVC_USER=root
+      - MVC_TOKEN=btssio@49
+      - MVC_DEBUG=false
+      - PMA_DOMAIN=http://phpmyadmin.ap3.local
+    command: php -S 0.0.0.0:9000
+    volumes:
+      - .:/var/www/html/
+    restart: unless-stopped
+    ports:
+      - "8080:9000"
