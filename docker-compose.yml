@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  sio-bdd:
+    extends:
+      file: sio-bdd/docker-compose.yml
+      service: web
+  frontal-nginx:
+    extends:
+      file: frontal-nginx/docker-compose.yml
+      service: frontal
+  db:
+    extends:
+      file: mysql/docker-compose.yml
+      service: db
+  phpmyadmin:
+    extends:
+      file: mysql/docker-compose.yml
+      service: phpmyadmin
