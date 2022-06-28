@@ -2,11 +2,11 @@ version: '3'
  
 services:
   db:
-    image: mysql:5.7
+    image: mariadb:latest
     container_name: db
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: btssio@49
+      MARIADB_ROOT_PASSWORD: btssio@49
     ports:
       - "3306:3306"
     volumes:
