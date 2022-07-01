@@ -2,11 +2,12 @@ version: '3'
  
 services:
   db:
-    image: mysql:8.0.29-oracle
+    image: mariadb:10.4.24-focal 
     container_name: db
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: btssio@49
+      LANG: C.UTF-8
     ports:
       - "3306:3306"
     volumes:
