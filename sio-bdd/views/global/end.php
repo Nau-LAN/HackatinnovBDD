@@ -6,7 +6,7 @@
         Votre compte est maintenant créé.
     </p>
 
-    <div class="d-flex flex-row justify-content-center">
+    <div class="d-flex flex-row justify-content-center" id="account">
         <?php
         foreach ($teams as $t) {
             ?>
@@ -37,4 +37,19 @@
         }
         ?>
     </div>
+
+    <div class="text-center pt-5">
+        <a href="#" onclick="saveInfo()" class="btn btn-primary rounded-pill d-inline-block m-auto">Sauvegarder les informations</a>
+    </div>
 </div>
+
+<script>
+    function saveInfo(){
+        html2canvas(document.querySelector("#account")).then(canvas => {
+            var a = document.createElement('a');
+            a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+            a.download = 'compte_<?= addslashes($t["team"]) ?>.jpg';
+            a.click();
+        });
+    }
+</script>

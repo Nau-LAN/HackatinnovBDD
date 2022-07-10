@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./public/style/main.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="./public/html2canvas.min.js"></script>
 </head>
 
 <body>
