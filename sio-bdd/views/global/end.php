@@ -19,6 +19,7 @@
                         <li><b>Base de données :</b> <?= $t["db"] ?></li>
                         <li><b>Utilisateur :</b> <?= $t["team"] ?></li>
                         <li><b>Mot de passe :</b> <?= $t["password"] ?></li>
+                        <li><b>Permissions :</b> Create, Read, Update, Delete</li>
                     </ul>
 
                     <?php
