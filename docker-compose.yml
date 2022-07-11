@@ -21,3 +21,7 @@ services:
     extends:
       file: mysql/docker-compose.yml
       service: phpmyadmin
+  front:
+    extends:
+      file: front/docker-compose.yml
+      service: front
