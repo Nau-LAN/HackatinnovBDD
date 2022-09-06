@@ -10,7 +10,7 @@ services:
       - MVC_USER=root
       - MVC_TOKEN=btssio@49
       - MVC_DEBUG=false
-      - PMA_DOMAIN=http://phpmyadmin.ap3.local
+      - PMA_DOMAIN=http://phpmyadminap3.dombtsig.local
     command: php -S 0.0.0.0:9000
     volumes:
       - .:/var/www/html/
