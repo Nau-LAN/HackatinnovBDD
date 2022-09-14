@@ -14,7 +14,7 @@
                 <div class="card-header text-center">Vos informations de connexions</div>
                 <div class="card-body">
                     <ul class="list-unstyled">
-                        <li><b>Serveur :</b> 192.168.139.1</li>
+                        <li><b>Serveur :</b> 192.168.10.15</li>
                         <li><b>Port :</b> 3306</li>
                         <li><b>Base de données :</b> <?= $t["db"] ?></li>
                         <li><b>Utilisateur :</b> <?= $t["team"] ?></li>
