@@ -4,7 +4,7 @@ services:
   sio-bdd:
     extends:
       file: sio-bdd/docker-compose.yml
-      service: web
+      service: sio-bdd
   frontal-nginx:
     extends:
       file: frontal-nginx/docker-compose.yml
