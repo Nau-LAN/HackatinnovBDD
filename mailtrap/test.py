@@ -12,6 +12,6 @@ msg['Subject'] = 'Sujet email'
 msg['From'] = me
 msg['To'] = you
 
-s = smtplib.SMTP('mail.ap3.local:1025')
+s = smtplib.SMTP('mailap3.dombtsig.local:1025')
 s.sendmail(me, [you], msg.as_string())
 s.quit()

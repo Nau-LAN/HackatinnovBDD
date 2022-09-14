@@ -1,4 +1,4 @@
 git pull
-git submodule update --remote front
+git submodule update --init --recursive
 docker-compose pull
 docker-compose up -d --remove-orphans --build
